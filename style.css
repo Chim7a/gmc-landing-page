@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +14,7 @@ body {
     rgba(72, 151, 222, 1) 43%,
     rgba(0, 212, 255, 1) 79%
   );
-  font-family: "DM Serif Text", serif;
+  font-family: "Lora", serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -36,7 +38,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-family: sans-serif;
 }
 
@@ -63,13 +65,16 @@ nav {
 }
 
 @media screen and (min-width: 536px) {
+  nav {
+    padding: 1rem 3rem;
+  }
   .left-nav {
     display: flex;
   }
   .left-nav-list {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }
 
@@ -79,27 +84,26 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92vh;
+  height: 90vh;
   text-align: center;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  padding: 0 1rem;
 }
 
 .hero h1 {
-  font-size: 4rem;
-  max-width: 600px;
+  font-size: 3rem;
+  max-width: 700px;
   color: white;
 }
 
 .hero p {
   color: whitesmoke;
-  max-width: 600px;
   font-family: sans-serif;
-  font-weight: 100;
 }
 
 .hero .arrow-btn {
@@ -122,5 +126,8 @@ nav {
 @media screen and (min-width: 536px) {
   .hero h1 {
     font-size: 5rem;
+  }
+  .hero p {
+    font-size: 1rem;
   }
 }
